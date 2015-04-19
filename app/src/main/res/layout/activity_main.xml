@@ -13,12 +13,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tombol_terjemah"
+        android:text="@string/tombol_terjemah_id"
         android:id="@+id/btnTerjemah"
         android:layout_below="@+id/txtTulisan"
         android:layout_toRightOf="@+id/txtTulisan"
         android:layout_toEndOf="@+id/txtTulisan"
         android:layout_marginTop="94dp"
-        android:onClick="onClickTombolTerjemah"/>
+        android:onClick="onClickTombolTerjemah"
+        />
 
 </RelativeLayout>

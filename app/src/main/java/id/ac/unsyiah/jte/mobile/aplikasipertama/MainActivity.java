@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -41,17 +42,31 @@ public class MainActivity extends ActionBarActivity {
 
     public void onClickTombolTerjemah(View view){
        TextView txtTulisan= (TextView) findViewById(R.id.txtTulisan);
-        if (bahasaIndonesia == false) {
+            if (bahasaIndonesia == false) {
             String apakabar = getString(R.string.apakabar_dunia);
             txtTulisan.setText(apakabar);
             bahasaIndonesia=true;
         }
         else {
-            String apakabar = getString(R.string.hello_world);
-            txtTulisan.setText(apakabar);
+            String helloWorld = getString(R.string.hello_world);
+            txtTulisan.setText(helloWorld);
             bahasaIndonesia=false;
         }
+
+       Button btnTerjemah = (Button) findViewById(R.id.btnTerjemah);
+            if(tblClick == false){
+                String terjemah = getString(R.string.tombol_terjemah_en);
+                btnTerjemah.setText(terjemah);
+                tblClick=true;
+            }
+        else{
+                String translate = getString(R.string.tombol_terjemah_id);
+                btnTerjemah.setText(translate);
+                tblClick=false;
+            }
      }
+
     private boolean bahasaIndonesia =false;
+    private boolean tblClick = false;
  }
 

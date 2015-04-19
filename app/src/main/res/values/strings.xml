@@ -2,7 +2,9 @@
     <string name="app_name">AplikasiPertama</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="apakabar_dunia">Hai.. Apakabar ?</string>
-    <string name="tombol_terjemah">Terjemahkan..</string>
+    <string name="apakabar_dunia"> Apakabar Dunia!</string>
+    <string name="tombol_terjemah_id">Terjemahkan..</string>
+    <string name="tombol_terjemah_en">Translate</string>
+
     <string name="action_settings">Settings</string>
 </resources>
