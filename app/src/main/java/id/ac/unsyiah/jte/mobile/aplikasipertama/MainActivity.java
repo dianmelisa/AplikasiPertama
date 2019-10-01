@@ -68,5 +68,13 @@ public class MainActivity extends ActionBarActivity {
 
     private boolean bahasaIndonesia =false;
     private boolean tblClick = false;
+
+    public boolean isBahasaIndonesia() {
+	return bahasaIndonesia;
+    }
+
+    public void setBahasaIndonesia(boolean bahasaIndonesia) {
+	this.bahasaIndonesia = bahasaIndonesia;
+    }
  }
 
